@@ -13,10 +13,11 @@ const ChatProvider = ({ children }) => {
   useEffect(() => {
     const userInfo = JSON.parse(localStorage.getItem("userInfo"));
     setUser(userInfo);
-
-    if (!userInfo) {
-      history.pushState("/");
-    }
+    
+    // if (!userInfo) {
+    //   history.pushState("/");
+    // }
+    
   }, [history]);
 
   return (
